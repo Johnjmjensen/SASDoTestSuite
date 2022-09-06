@@ -1,0 +1,35 @@
+DO Incrementation Test Suite
+
+
+Execute without incrementation.
+
+Execute with incrementation of a positive number.
+
+Execute with incrementation of a negative number. (Catch syntax error, or clean value to just be numeric?)
+
+Execute with incrementation greater than index length. (catch error for acceptance)
+
+Execute with incrementation using non-number character(s). (Catch error for syntax)
+
+Execute large index with low incrementation. Assert failure if exceeds certain run time.
+
+
+TRY
+DO index = start TO stop<5>;
+ <
+first<>
+second<>
+this<>
+fourth<>
+>
+END;
+Catch<syntax error>
+	<accept = true>
+ELSE
+	<accept = false>
+assert.true<accept = true>
+
+
+
+
+
